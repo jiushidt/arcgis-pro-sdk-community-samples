@@ -345,7 +345,7 @@ namespace DockPaneBookmarkAdvanced
         return;
 
       // clear the bookmarks
-      _bookmarks.Clear();
+      //_bookmarks.Clear();//if do this,SelectedBookmark would be null;
       // find the map
       var mapItem = Project.Current.Items.FirstOrDefault(i => i.Path == SelectedBookmark.MapURI) as MapProjectItem;
 
