@@ -39,7 +39,7 @@ namespace ConfigWithStartWizard.Models
     {
 
       var templates = new List<PathItem>();
-      templates.Add(new PathItem("Blank"));
+      templates.Add(new PathItem(){Name="Blank"});
       string templatesDir = GetDefaultTemplateFolder();
       if (System.IO.Directory.Exists(templatesDir))
       {
